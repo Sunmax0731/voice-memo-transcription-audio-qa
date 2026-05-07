@@ -1,0 +1,108 @@
+[
+  {
+    "id": "happy-path",
+    "description": "必須項目がそろい、警告もない代表成功ケース。",
+    "input": {
+      "items": [
+        {
+          "id": "happy-path",
+          "audioFile": "samples/audio/memo.wav",
+          "transcript": "これは音声メモの文字起こしサンプルです。",
+          "speaker": "speaker-1",
+          "qualityNote": "音量とノイズを確認済み"
+        }
+      ]
+    },
+    "expected": {
+      "overall": "pass",
+      "counts": {
+        "pass": 1,
+        "warning": 0,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "id": "missing-required",
+    "description": "必須項目が欠落し、失敗として扱うケース。",
+    "input": {
+      "items": [
+        {
+          "id": "missing-required",
+          "transcript": "これは音声メモの文字起こしサンプルです。",
+          "speaker": "speaker-1",
+          "qualityNote": "音量とノイズを確認済み"
+        }
+      ]
+    },
+    "expected": {
+      "overall": "fail",
+      "counts": {
+        "pass": 0,
+        "warning": 0,
+        "fail": 1
+      }
+    }
+  },
+  {
+    "id": "warning",
+    "description": "自動判定では進められるが、手動確認を要求するケース。",
+    "input": {
+      "items": [
+        {
+          "id": "warning",
+          "audioFile": "samples/audio/memo.wav",
+          "transcript": "これは音声メモの文字起こしサンプルです。",
+          "speaker": "speaker-1",
+          "qualityNote": "音量とノイズを確認済み",
+          "noiseDetected": true
+        }
+      ]
+    },
+    "expected": {
+      "overall": "warning",
+      "counts": {
+        "pass": 0,
+        "warning": 1,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "description": "成功、警告、失敗が混在するバッチ検証ケース。",
+    "input": {
+      "items": [
+        {
+          "id": "mixed-pass",
+          "audioFile": "samples/audio/memo.wav",
+          "transcript": "これは音声メモの文字起こしサンプルです。",
+          "speaker": "speaker-1",
+          "qualityNote": "音量とノイズを確認済み"
+        },
+        {
+          "id": "mixed-warning",
+          "audioFile": "samples/audio/memo.wav",
+          "transcript": "これは音声メモの文字起こしサンプルです。",
+          "speaker": "speaker-1",
+          "qualityNote": "音量とノイズを確認済み",
+          "noiseDetected": true
+        },
+        {
+          "id": "mixed-fail",
+          "audioFile": "samples/audio/memo.wav",
+          "speaker": "speaker-1",
+          "qualityNote": "音量とノイズを確認済み"
+        }
+      ]
+    },
+    "expected": {
+      "overall": "fail",
+      "counts": {
+        "pass": 1,
+        "warning": 1,
+        "fail": 1
+      }
+    }
+  }
+]
