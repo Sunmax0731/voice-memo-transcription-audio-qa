@@ -1,0 +1,32 @@
+{
+  "pickupRank": 47,
+  "domain": "WindowsApp",
+  "ideaNo": 6,
+  "idea": "音声メモ・文字起こし・音声検品スイート",
+  "repository": "voice-memo-transcription-audio-qa",
+  "publish": "GitHub Release / BOOTH",
+  "createdIdeaFolder": "D:/AI/WindowsApp/created_idea_006_voice-memo-transcription-audio-qa",
+  "zipFile": "D:/AI/WindowsApp/created_idea_006_voice-memo-transcription-audio-qa/idea_006_voice-memo-transcription-audio-qa.zip",
+  "zipDocumentsChecked": [
+    "metadata.json",
+    "README.md",
+    "01_REQUIREMENTS.md",
+    "02_SPECIFICATION.md",
+    "03_DESIGN.md",
+    "04_IMPLEMENTATION_PLAN.md",
+    "05_TEST_PLAN.md",
+    "06_RELEASE_CHECKLIST.md"
+  ],
+  "zipMetadataRepositoryName": "voice-memo-transcription-audio-qa",
+  "zipMetadataMatchedRepository": true,
+  "existingRepositoryReadmeAtStart": "存在しない",
+  "domainDocsRead": [
+    "D:/AI/IDEAS/WindowsApp/Design.md",
+    "D:/AI/IDEAS/WindowsApp/Architecture.md",
+    "D:/AI/IDEAS/WindowsApp/AGENTS.md",
+    "D:/AI/IDEAS/WindowsApp/SKILL.md",
+    "D:/AI/WindowsApp/AGENTS.md",
+    "D:/AI/WindowsApp/SKILL.md"
+  ],
+  "hostInference": null
+}

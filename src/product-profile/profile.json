@@ -1,0 +1,19 @@
+{
+  "name": "voice-memo-transcription-audio-qa",
+  "title": "音声メモ・文字起こし・音声検品スイート",
+  "domain": "WindowsApp",
+  "kind": "windows-app",
+  "host": null,
+  "field": "音声メモ検品",
+  "audience": "音声メモを議事録、字幕、動画素材へ変換する制作者",
+  "workflow": "音声メモ、文字起こし、話者、音量/ノイズ確認をまとめてレビューする。",
+  "requiredFields": [
+    "audioFile",
+    "transcript",
+    "speaker",
+    "qualityNote"
+  ],
+  "warningField": "noiseDetected",
+  "warningMessage": "ノイズまたは無音区間の追加確認が必要です。",
+  "qcdsTarget": "A-以上。closed alphaではS-を基準とする。"
+}
