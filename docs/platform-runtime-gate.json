@@ -1,0 +1,11 @@
+{
+  "product": "voice-memo-transcription-audio-qa",
+  "title": "音声メモ・文字起こし・音声検品スイート",
+  "domain": "WindowsApp",
+  "ideaNo": 6,
+  "platformType": "windows-local-app",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
